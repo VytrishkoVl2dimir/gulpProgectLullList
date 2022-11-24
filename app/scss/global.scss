@@ -75,6 +75,13 @@ footer{
 	padding: 0px 15px;
 }
 
+.container-fluid {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+
 // Властивості крапок в слайдері
 .slick-dots {
 	display: flex;
