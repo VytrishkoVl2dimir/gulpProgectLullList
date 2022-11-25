@@ -554,15 +554,59 @@
 		}
 	}
 }
-.mix {
-}
-.bedroom {
-}
-.living {
-}
-.office {
-}
-.dining {
-}
-.chair {
+
+//=========== BLOG  ================================================================
+
+// 	&__items {
+// 		display: grid;
+// 		grid-template-columns: 1fr 1fr;
+// 		grid-gap: 30px;
+// 	}
+
+//=====================================================================================
+
+.blog-box {
+	padding-bottom: 100px;
+	&__title {
+		@extend %title-font;
+		color: $title;
+		font-size: 36px;
+		line-height: 51px;
+		max-width: 430px;
+		margin: 0 auto 30px;
+		text-align: center;
+	}
+	&__items {
+		display: flex;
+	}
+	&__item {
+		flex: 1 1 50%;
+		padding: 0 15px;
+	}
+	&__img-link {
+		display: inline-block;
+		margin-bottom: 19px;
+	}
+	&__img {
+	}
+	&__links {
+		margin-bottom: 9px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 28px;
+		color: #707070;
+	}
+	&__date,
+	&__author,
+	&__theme {
+		color: inherit;
+	}
+	&__item-titlelink {
+	}
+	&__item-title {
+		@extend %title-font;
+		color: $title;
+		font-size: 24px;
+		line-height: 38px;
+	}
 }
