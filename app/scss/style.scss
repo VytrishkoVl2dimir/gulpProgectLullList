@@ -397,7 +397,6 @@
 //=============  DECOR  ============================================
 
 .decor {
-	margin-bottom: 80px;
 	padding: 172px 0px 156px 0px;
 	background: url('../images/decor/decor.jpg') center/cover no-repeat;
 
@@ -422,5 +421,72 @@
 	}
 	&__text {
 		max-width: 540px;
+	}
+}
+
+//=============  WORKS  ============================================
+
+.works-path {
+	padding: 80px 0px 30px 0px;
+	&__title {
+		@extend %title-font;
+		color: $title;
+		font-size: 36px;
+		line-height: 51px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	&__items {
+	}
+	&__items-box {
+		display: flex;
+		align-items: start;
+		border-bottom: 2px solid rgba($title, 0.7);
+		position: relative;
+		&::before{
+			content:'';
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			left: 0;
+			bottom: -5px;
+			background: $title;
+		}
+	}
+	&__item {
+		width: 250px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		position: relative;
+		height: 100%;
+	}
+	&__item--production{
+		margin-left: 317px;
+		&::after{
+			content:'';
+			position: absolute;
+			width: 2px;
+			height: 20px;
+			left: 0;
+			bottom: 0;
+			background: rgba($title, 0.7);
+		}
+	}
+	&__item--production,
+	&__item--consultation{
+		padding-bottom: 30px;
+	}
+
+	&__item-img {
+	}
+	&__item-title {
+		margin-left: 15px;
+		@extend %title-font;
+		color: $title;
+	}
+	&__item-text {
+		margin-top: 13px;
 	}
 }
