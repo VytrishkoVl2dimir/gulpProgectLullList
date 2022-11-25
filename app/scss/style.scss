@@ -522,13 +522,36 @@
 		line-height: 28px;
 		text-align: center;
 		color: #8F8D8D;
-		background-color: #fff;
+		background-color: transparent;
+		cursor: pointer;
+		margin-bottom: 40px;
 	}
+	
+	.mixitup-control-active{
+		background: #FFEF35;
+		border: 1px solid rgba(#FFEF35, 0.5);
+		color: $title;
+	}
+
 	&__inner {
 	}
 	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap:30px 35px;
 	}
 	&__item {
+		&:first-child{
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+		img{
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			max-width: 1150px;
+		}
 	}
 }
 .mix {
