@@ -13,4 +13,6 @@ $(function () {
 		fade: true,
 		// autoplay: true
 	});
+
+	var mixer = mixitup('.galery__inner');
 })

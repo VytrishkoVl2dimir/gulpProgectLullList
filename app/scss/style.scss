@@ -503,3 +503,43 @@
 		margin-top: 13px;
 	}
 }
+
+//===========  GALERY  ================================================================
+
+.galery {
+	padding: 80px 0px 90px 0px;
+	&__buttons {
+		text-align: center;
+
+	}
+	&__btn {
+		margin: 0 13px;
+		padding: 6px 16px;
+		border: 1px solid rgba(#454647, 0.5);
+		border-radius: 20px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 28px;
+		text-align: center;
+		color: #8F8D8D;
+		background-color: #fff;
+	}
+	&__inner {
+	}
+	&__items {
+	}
+	&__item {
+	}
+}
+.mix {
+}
+.bedroom {
+}
+.living {
+}
+.office {
+}
+.dining {
+}
+.chair {
+}
