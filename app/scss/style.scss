@@ -440,7 +440,7 @@
 	}
 	&__items-box {
 		display: flex;
-		align-items: start;
+		align-items: flex-end;
 		border-bottom: 2px solid rgba($title, 0.7);
 		position: relative;
 		&::before{
@@ -476,7 +476,20 @@
 	}
 	&__item--production,
 	&__item--consultation{
-		padding-bottom: 30px;
+		padding-bottom: 38px;
+	}
+	&__item--measuring{
+		padding-top: 38px;
+		margin-left: 305px;
+		&::before{
+			content:'';
+			position: absolute;
+			width: 2px;
+			height: 20px;
+			left: 0;
+			top: 0;
+			background: rgba($title, 0.7);
+		}
 	}
 
 	&__item-img {
