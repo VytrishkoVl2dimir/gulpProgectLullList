@@ -355,7 +355,7 @@
 //=========  NEW COLECTION  ====================================
 
 .new-collection {
-	padding: 45px 0px 105px 0px;
+	padding: 45px 0px 35px 0px;
 	text-align: center;
 	&__title {
 		@extend %title-font;
@@ -387,6 +387,7 @@
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 30px;
+	padding-bottom: 70px;
 	&__item {
 		position: relative;
 		&:hover{
@@ -712,5 +713,107 @@
 	&__popup-play {
 	}
 	&__popup-img {
+	}
+}
+
+//=====   INSPIRATION   ===============================================================
+
+.inspiration {
+padding-top: 100px;
+position: relative;
+			&::after{
+			content:'';
+			position: absolute;
+			bottom: 0;
+			left: 0;	
+			right: 0;
+			height: 414px;
+			z-index: -1;
+			background: url('../images/about/inspiration-bg.jpg') center/cover no-repeat;	
+		}
+		&__inner {
+			display: flex;
+			justify-content: center;
+		}
+		&__images {
+			margin-right: 78px;
+			margin-left: -230px;
+			padding-bottom: 30px;
+	}
+	&__content {
+		max-width: 825px;
+		align-items: center;
+	}
+	&__title {
+		@extend %title-font;
+		color: $title;
+		font-size: 36px;
+		line-height: 60px;
+		padding-bottom: 15px;
+		margin-bottom: 24px;
+		position: relative;
+			&::after{
+			content:'';
+			position: absolute;
+			bottom: 0;
+			left: 0;		
+			width: 200px;
+			height: 2px;
+			background: #6D7278;
+			border: 1px solid #979797;
+		}
+	}
+	&__text {
+		margin-bottom: 30px;
+	}
+	&__list {
+	}
+	&__item {
+		@extend %title-font;
+		color: $title;
+		line-height: 23px;
+		margin-bottom: 33px;
+		&:last-child{
+			margin: 0;
+		}
+	}
+	&__item-content {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 14px;
+		position: relative;
+			&::after{
+			content:'';
+			position: absolute;
+			bottom: 0;
+			left: 0;		
+			width: 823px;
+			border: 2px solid #fff;
+			}
+	}
+	&__item-text {
+	}
+	&__item-num {
+	}
+	&__item-line {
+		height: 2px;
+		background-color: $title;
+		border-radius: 4px;
+		margin-top: -3px;
+		position: relative;
+		z-index: 2;
+	}
+}
+
+//=====  HARTNERS  ===================================================================
+
+.partners {
+	padding: 16px 0px 60px 0px;
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+	&__item {
+		margin: 0 auto;
 	}
 }
