@@ -81,6 +81,27 @@ footer{
 	padding: 0 10px;
 }
 
+.info-email {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 28px;
+	color: $title;
+	padding: 0px 0px 0px 30px;
+	margin: 0px 0px 22px 0px;
+	position: relative;
+	&::before{
+		content:'';
+		background: url('../images/footer/envelope.svg') 0 0 no-repeat;
+		position: absolute;
+		width: 16px;
+		height: 12px;
+		left: 0;
+		top: 9px;
+	}
+
+}
+
 
 // Властивості крапок в слайдері
 .slick-dots {

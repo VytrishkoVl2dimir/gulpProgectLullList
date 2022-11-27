@@ -79,26 +79,6 @@
 		padding: 0px 63px 0px 0px;
 		margin: 0px 0px 16px 0px;
 	}
-	&__info-email {
-		display: inline-block;
-		font-weight: 600;
-		font-size: 14px;
-		line-height: 28px;
-		color: $title;
-		padding: 0px 0px 0px 30px;
-		margin: 0px 0px 22px 0px;
-		position: relative;
-		&::before{
-			content:'';
-			background: url('../images/footer/envelope.svg') 0 0 no-repeat;
-			position: absolute;
-			width: 16px;
-			height: 12px;
-			left: 0;
-			top: 9px;
-		}
-
-	}
 	
 	&__form {
 		display: flex;
@@ -197,6 +177,7 @@
 	}
 }
 
+
 //======= RIGHTSIDE-MENU =======================================================
 
 
@@ -265,6 +246,8 @@
 .breadcrumbs {
 	background: rgba(#DFDFDF, .5);
 	padding: 13px 0px 14px 0px;
+	position: relative;
+	z-index: 999;
 	&__list {
 		display: flex;
 	}
@@ -601,6 +584,15 @@
 			max-width: 1150px;
 		}
 	}
+	&.galery-page {
+		.galery__item img {
+			max-height: 1165px;
+		}
+		.galery__item:nth-child(8){
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+	}
 }
 
 //=========== BLOG  ================================================================
@@ -815,5 +807,112 @@ position: relative;
 	}
 	&__item {
 		margin: 0 auto;
+	}
+}
+
+//==========  CONTACT  ===============================================================
+
+.map {
+	margin-top: -55px;
+	margin-bottom: 50px;
+}
+
+.contact {
+	padding-bottom: 100px;
+	&__title {
+		@extend %title-font;
+		color: $title;
+		font-size: 36px;
+		line-height: 60px;
+		padding-bottom: 30px;
+		margin-bottom: 40px;
+		position: relative;
+			&::after{
+			content:'';
+			position: absolute;
+			bottom: 0;
+			left: 0;		
+			width: 200px;
+			height: 2px;
+			background: #6D7278;
+			border: 1px solid #979797;
+		}
+	}
+	&__social {
+		display: flex;
+		padding-left: 284px;
+		margin-bottom: 20px;
+	}
+	&__box {
+		padding-left: 284px;
+	}
+	&__social-item + .contact__social-item {
+		padding-left: 40px;
+	}
+	&__social-link {
+	}
+	&__social-img {
+	}
+	&__text{
+		margin-bottom: 10px;
+	}
+	&__phone {
+		color: $default;
+
+	}
+	&__st {
+	}
+	&__city {
+		margin-bottom: 16px;
+	}
+	&__form {
+		padding-left: 284px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+	}
+	&__form-input {
+		padding: 6px 17px;
+		margin-bottom: 13px;
+		border: 1px solid #DFDFDF;
+		border-radius: 20px;
+		line-height: 28px;
+		width: 49%;
+		background-color: transparent;
+		&::placeholder{
+			font-family: 'Open Sans';
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 28px;
+			color: #A1A1A1;
+		}
+	}
+	&__form-area {
+		width: 100%;
+		min-height: 125px;
+		padding: 14px 17px;
+		border: 1px solid #DFDFDF;
+		border-radius: 24px;
+		resize: none;
+		margin-bottom: 20px;
+		&::placeholder{
+			font-family: 'Open Sans';
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 27px;
+			color: #A1A1A1;
+		}
+	}
+	&__form-btn {
+		padding: 6px 71px;
+		background: $title;
+		border-radius: 21px;
+		font-weight: 600;
+		line-height: 28px;
+		font-size: 16px;
+		text-align: center;
+		color: #FFFFF0;
+		cursor: pointer;
 	}
 }
