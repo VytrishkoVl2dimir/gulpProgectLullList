@@ -219,7 +219,7 @@
 		position: relative;
 		margin-bottom: 17px;
 		padding: 0px 0px 17px 0px;
-		&::a  fter{
+		&::after{
 			content:'';
 			position: absolute;
 			bottom: 0;
@@ -956,3 +956,133 @@ position: relative;
 		opacity: 0;
 	}
 }
+
+//======= BLOG ===========================================
+
+.blog {
+	padding: 60px 0px 100px 0px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+
+	}
+	&__category {
+		margin-bottom: 36px;
+
+	}
+	&__category-title,
+	&__tags-title {
+		@extend %title-font;
+		color: $title;
+		font-weight: 700;
+		line-height: 23px;
+		margin-bottom: 14px;
+	}
+	&__category-list {
+		
+		
+	}
+	&__category-item {
+		margin-bottom: 12px;
+		&:last-child{
+			margin-bottom: 48px;
+		}
+	}
+	&__category-link {
+		color: $default;
+	}
+	&__tags {
+		margin-bottom: 50px;
+	}
+	
+	&__tags-link {
+		border: 1px solid rgba(#454647, .5);
+		border-radius: 20px;
+		font-weight: 600;
+		font-size: 14px;
+		color: #8F8D8D;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		padding: 0px 14px;
+		display: inline-block;
+		&:nth-child(4){
+			margin-right: 0;
+		}
+	}
+	&__social {
+		display: flex;
+	}
+	&__social-item {
+		padding-right: 20px;
+		&:last-child{
+			padding-right: 0;
+		}
+
+	}
+	&__social-link {
+	}
+	&__social-img {
+	}
+
+
+
+	&__items {
+	}
+}
+
+.aside {
+	width: 350px;
+	margin-left: 30px;
+	&__search {
+		position: relative;
+		margin-bottom: 40px;
+	}
+	&__search-input {
+		padding: 6px 45px 6px 18px;
+		border: 1px solid rgba($title, .7);
+		border-radius: 20px;
+		line-height: 28px;
+		width: 100%;
+		display: block;
+		&::placeholder{
+			font-family: 'Open Sans';
+			font-weight: 400;
+			font-size: 14px;
+			color: #A1A1A1;
+		}
+	}
+	&__search-btn {
+		border: none;
+		position: absolute;
+		right: 19px;
+		top: 0;
+		bottom: 0;
+		background-color: transparent;
+		cursor: pointer;
+	}
+}
+
+.recent-post {
+	margin-bottom: 40px;
+	&__title {
+		@extend %title-font;
+		color: $title;
+		font-weight: 700;
+		line-height: 23px;
+		margin-bottom: 24px;
+	}
+	&__item {
+		margin-bottom: 11px;
+	}
+	&__item-title {
+		color: $default;
+		display: block;
+	}
+	&__date,
+	&__author {
+		font-size: 14px;
+		line-height: 28px;
+		color: #A1A1A1;
+	}
+}
+
