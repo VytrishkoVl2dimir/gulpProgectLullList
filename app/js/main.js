@@ -17,10 +17,13 @@ $(function () {
 	$('.contact-slider').slick({
 		slidesToShow: 10,
 		slidesToScroll: 10,
-
 		dots: true,
 		arrows: false
+	});
 
+	$('.article-slider__box').slick({
+		prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-left"><img src="images/arrow-slider-left.svg" alt="arrow-slider-left"></button>',
+		nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-right"><img src="images/arrow-slider-right.svg" alt="arrow-slider-right"></button>'
 	});
 
 	var mixer = mixitup('.galery__inner', {
