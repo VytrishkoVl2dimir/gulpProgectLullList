@@ -1160,24 +1160,6 @@ position: relative;
 			color: $title;
 		}
 	}
-	.blog-one__item{
-	p{
-		margin-bottom: 40px;
-	}
-	blockquote{		
-		color: $title;
-		font-style: italic;
-		font-weight: 300;
-		font-size: 24px;
-		line-height: 38px;		
-		margin-bottom: 30px;
-		padding: 0px 40px;
-	}
-	.blog__blockquote-author::after{
-		margin-right: auto;
-		margin-left: 0;
-	}
-	}
 }
 
 .aside {
@@ -1236,3 +1218,196 @@ position: relative;
 	}
 }
 
+.blog-one__item{
+	p{
+		margin-bottom: 40px;
+	}
+	blockquote{		
+		color: $title;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 38px;		
+		margin-bottom: 30px;
+		padding: 0px 40px;
+	}
+	.blog__blockquote-author::after{
+		margin-right: auto;
+		margin-left: 0;
+	}
+}
+
+
+.blog-one {
+
+	&__tags {
+		margin-bottom: 30px;
+	}
+	&__tags-title {
+		@extend %title-font;
+		color: $title;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 31px;
+		margin-bottom: 15px;
+	}
+	&__tags-link {
+		padding: 0px 16px;
+		border: 1px solid rgba(#454647, .5);
+		border-radius: 14px;
+		display: inline-block;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 28px;
+		text-align: center;
+		margin-bottom: 10px;
+		margin-right: 23px;
+		color: #8F8D8D;
+	}
+	&__links {
+		border-top: 1px solid #DFDFDF;
+		border-bottom: 1px solid #DFDFDF;
+		padding: 40px 0px 30px 0px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 35px;
+	}
+	&__link {
+		max-width: 276px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 28px;
+		color: #707070;
+	}
+	&__link-prev {
+		padding-left: 33px;
+		background-image: url('../images/blog/bigArrowLeft.svg');
+		background-repeat: no-repeat;
+		background-position: 0 50%;
+	}
+	&__link-next {
+		padding-right: 33px;
+		text-align: right;
+		background-image: url('../images/blog/bigArrowRight.svg');
+		background-repeat: no-repeat;
+		background-position: 100% 50%;
+		}
+
+		&__comments {
+		}
+		&__comments-title {
+			@extend %title-font;
+			color: $title;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 31px;
+			margin-bottom: 15px;
+		}
+		&__comments-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: start;
+			margin-bottom: 40px;
+		}
+		&__comments-avatar {
+			width: 64px;
+			height: 64px;
+			object-fit: cover;
+			border-radius: 50%;
+			margin-right: 13px;
+
+		}
+		&__comments-info {
+
+		}
+		&__comments-name {
+			@extend %title-font;
+			color: $title;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 23px;
+		}
+		&__comments-date {
+			margin-bottom: 10px;
+			font-size: 14px;
+			color: #A1A1A1;
+		}
+		&__comments-text {
+		}
+		&__reply {
+			background-color: transparent;
+			margin-left: 5px;
+			border: none;
+			padding: 0;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 28px;
+			color: #707070;
+		}
+
+		&__form {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		&__form-title {
+			@extend %title-font;
+			color: $title;
+			font-weight: 700;
+			line-height: 23px;
+			margin-bottom: 25px;
+		}
+		&__form-textarea {
+			width: 100%;
+			min-height: 125px;
+			padding: 14px 17px;
+			border: 1px solid #DFDFDF;
+			border-radius: 24px;
+			resize: none;
+			margin-bottom: 12px;
+			&::placeholder{
+				font-family: 'Open Sans';
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 27px;
+				color: #A1A1A1;
+				}		
+			}
+		&__form-input {
+			padding: 6px 17px;
+			margin-bottom: 13px;
+			border: 1px solid #DFDFDF;
+			border-radius: 20px;
+			line-height: 28px;
+			width: 49%;
+			background-color: transparent;
+			margin-bottom: 20px;
+			&::placeholder{
+				font-family: 'Open Sans';
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 28px;
+				color: #A1A1A1;
+			}
+		}
+		&__form-label {
+			line-height: 28px;
+			color: #A1A1A1;
+			width: 100%;
+			margin-bottom: 20px;			
+		}
+		&__form-labelinput {
+
+		}
+		&__form-btn {
+			padding: 6px 53px;
+			background: $title;
+			border-radius: 21px;
+			font-weight: 600;
+			font-size: 16px;
+			text-align: center;
+			cursor: pointer;
+			line-height: 28px;
+			color: #FFFFF0;
+		}
+	}
