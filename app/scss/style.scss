@@ -821,6 +821,9 @@ position: relative;
 .map {
 	margin-top: -55px;
 	margin-bottom: 50px;
+	iframe{
+		height: 578px;
+	}
 }
 
 .contact {
@@ -932,26 +935,33 @@ position: relative;
 	&__item {
 		padding: 5px;
 		margin-bottom: 20px;
-		position: relative;
 		&:hover{
 			.contact-slider__title{
 				opacity: 1;
 			}
 		}
-		}
+	}
+	&__item-box{
+		display: flex;
+		align-items: center;
+		// justify-content: center;
+		position: relative;
+
+	}
 	&__img {
 		width: 170px;
 		height: 170px;
 		object-fit: cover;
 	}
 	&__title {
+		width: 100%;
 		transition: all 0.5s;
 		padding: 0px 15px;
 		position: absolute;
 		left: 0;
 		top: 0;
 		right: 0;
-		bottom: 0;
+		bottom: 0;	
 		display: flex;
 		align-items: center;
 		text-align: center;
